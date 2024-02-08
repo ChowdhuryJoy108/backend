@@ -49,7 +49,7 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-//pre hook-methods- save/valid/delete/update
+//mongoose pre hook-methods- save/valid/delete/update
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
   this.password = await bcrypt.hash(this.password, 10);

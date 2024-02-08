@@ -1,0 +1,21 @@
+{
+  "statusCode": 200,
+  "data": {
+    "user": {
+      "_id": "65c4dbdb4a06c3250380c892",
+      "username": "@john",
+      "email": "john@gmail.com",
+      "fullName": "john",
+      "avatar": "http://res.cloudinary.com/dca9qg0bf/image/upload/v1707400154/zs45xxiiognwnjfbkk91.jpg",
+      "coverImage": "",
+      "watchHistory": [],
+      "createdAt": "2024-02-08T13:49:15.507Z",
+      "updatedAt": "2024-02-08T14:03:07.342Z",
+      "__v": 0
+    },
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwidXNlcm5hbWUiOiJAam9obiIsImZ1bGxOYW1lIjoiam9obiIsImlhdCI6MTcwNzQwMDk4NywiZXhwIjoxNzA3NDg3Mzg3fQ.odeNs3adIm6IF8SGivFplYWTXTxO_rNLgUtd6blR80U",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJpYXQiOjE3MDc0MDA5ODcsImV4cCI6MTcwODI2NDk4N30.K4UQZqTbkJCoVVCWCX6lPPjKcrhQc0MrSp65J1OrQ3w"
+  },
+  "message": "User logged In Successfully",
+  "success": true
+}
