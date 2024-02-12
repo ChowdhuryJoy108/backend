@@ -1,21 +1,56 @@
-{
-  "statusCode": 200,
-  "data": {
-    "user": {
-      "_id": "65c4dbdb4a06c3250380c892",
-      "username": "@john",
-      "email": "john@gmail.com",
-      "fullName": "john",
-      "avatar": "http://res.cloudinary.com/dca9qg0bf/image/upload/v1707400154/zs45xxiiognwnjfbkk91.jpg",
-      "coverImage": "",
-      "watchHistory": [],
-      "createdAt": "2024-02-08T13:49:15.507Z",
-      "updatedAt": "2024-02-08T14:03:07.342Z",
-      "__v": 0
-    },
-    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwidXNlcm5hbWUiOiJAam9obiIsImZ1bGxOYW1lIjoiam9obiIsImlhdCI6MTcwNzQwMDk4NywiZXhwIjoxNzA3NDg3Mzg3fQ.odeNs3adIm6IF8SGivFplYWTXTxO_rNLgUtd6blR80U",
-    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJpYXQiOjE3MDc0MDA5ODcsImV4cCI6MTcwODI2NDk4N30.K4UQZqTbkJCoVVCWCX6lPPjKcrhQc0MrSp65J1OrQ3w"
+[
+  {
+    "response": "create user response object"
   },
-  "message": "User logged In Successfully",
-  "success": true
-}
+  {
+    "statusCode": 200,
+    "data": {
+      "user": {
+        "_id": "65c4dbdb4a06c3250380c892",
+        "username": "@john",
+        "email": "john@gmail.com",
+        "fullName": "john",
+        "avatar": "http://res.cloudinary.com/dca9qg0bf/image/upload/v1707400154/zs45xxiiognwnjfbkk91.jpg",
+        "coverImage": "",
+        "watchHistory": [],
+        "createdAt": "2024-02-08T13:49:15.507Z",
+        "updatedAt": "2024-02-08T14:03:07.342Z",
+        "__v": 0
+      },
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJlbWFpbCI6ImpvaG5AZ21haWwuY29tIiwidXNlcm5hbWUiOiJAam9obiIsImZ1bGxOYW1lIjoiam9obiIsImlhdCI6MTcwNzQwMDk4NywiZXhwIjoxNzA3NDg3Mzg3fQ.odeNs3adIm6IF8SGivFplYWTXTxO_rNLgUtd6blR80U",
+      "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWM0ZGJkYjRhMDZjMzI1MDM4MGM4OTIiLCJpYXQiOjE3MDc0MDA5ODcsImV4cCI6MTcwODI2NDk4N30.K4UQZqTbkJCoVVCWCX6lPPjKcrhQc0MrSp65J1OrQ3w"
+    },
+    "message": "User logged In Successfully",
+    "success": true
+  },
+
+  {
+    "response": "cloudinary file uplaod response object"
+  },
+
+  {
+    "asset_id": "b5e6d2b39ba3e0869d67141ba7dba6cf",
+    "public_id": "eneivicys42bq5f2jpn2",
+    "api_key": "349963819116147",
+    "version": 1570979139,
+    "version_id": "98f52566f43d8e516a486958a45c1eb9",
+    "signature": "abcdefghijklmnopqrstuvwxyz12345",
+    "width": 1000,
+    "height": 672,
+    "format": "jpg",
+    "resource_type": "image",
+    "created_at": "2023-03-11T12:24:32Z",
+    "tags": [],
+    "pages": 1,
+    "bytes": 350749,
+    "type": "upload",
+    "etag": "5297bd123ad4ddad723483c176e35f6e",
+    "placeholder": false,
+    "url": "http://res.cloudinary.com/demo/image/upload/v1570979139/eneivicys42bq5f2jpn2.jpg",
+    "secure_url": "https://res.cloudinary.com/demo/image/upload/v1570979139/eneivicys42bq5f2jpn2.jpg",
+    "folder": "",
+    "access_mode": "public",
+    "existing": false,
+    "original_filename": "sample"
+  }
+]
