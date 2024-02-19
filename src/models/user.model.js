@@ -46,7 +46,7 @@ const userSchema = new Schema(
       type: String,
     },
   },
-  { timestamps: true }
+  { timestamps: true } 
 );
 
 //mongoose pre hook-methods- save/valid/delete/update

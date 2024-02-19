@@ -1,6 +1,6 @@
 [
   {
-    "response": "create user response object"
+    "response": "login user response object"
   },
   {
     "statusCode": 200,
