@@ -177,8 +177,8 @@ const logoutUser = asyncHandler(async (req, res) => {
   await User.findByIdAndUpdate(
     req.user._id,
     {
-      $set: {
-        refreshToken: undefined,
+      $unset: {
+        refreshToken: 1,
       },
     },
     {
@@ -275,9 +275,15 @@ const changeCurrentPassword = asyncHandler(async (req, res) => {
 });
 
 const getCurrentUser = asyncHandler(async (req, res) => {
+  console.log(req.user._id)
+  const user = await User.findById(req.user?._id).select("-password -refreshToken")
+  console.log(user)
+  if(!user){
+      throw new ApiError(401,"User not found")
+    }
   return res
     .status(200)
-    .json(new ApiResponse(200, req.user, "Current user fetched successfully"));
+    .json(new ApiResponse(200, {user:user}, "Current user fetched successfully"));
 
   // this will work same as well
 
@@ -296,12 +302,12 @@ const getCurrentUser = asyncHandler(async (req, res) => {
 });
 
 const updateAccountDetails = asyncHandler(async (req, res) => {
-  const { fullName, email } = req.body;
-  if (!(fullName || email)) {
+  const { fullName,email} = req.body;
+  if (!(fullName||email)) {
     throw new ApiError(400, "All fields are required");
   }
 
-  const updatedUser = User.findByIdAndUpdate(
+  const updatedUser = await User.findByIdAndUpdate(
     req.user?._id,
     {
       $set: {
@@ -498,7 +504,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
 
   return res
   .status(200)
-  .json(new ApiResponse(200, user[0].watchHistory, "Watch History fetched successfully"))
+  .json(new ApiResponse(200, user[0]?.watchHistory, "Watch History fetched successfully"))
 });
 
 export {
